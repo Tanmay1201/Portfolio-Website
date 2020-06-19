@@ -1,9 +1,16 @@
 <template>
   <div>
+    <head>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js">
+    </head>
     <div class="leftPart">
-      <img src="../assets/profilepicture.jpg" alt="profile" />
+      <center>
+        <img src="../assets/profilepicture.jpg" class="profile_image" alt="Profile Image"/>
+        <h4> Tanmay </h4>
+      </center>
+      <a href="#"><i class="fas fa-asterisk"></i><span>About</span></a>
     </div>
-    <div class="rightPart">
+    <div class="rightPart" style="margin-left:35%;padding:1px 16px;height:1000px;">
       <div id="Introduction">
         <span id="firstName"> TANMAY </span>
         <span id="lastName"> MATHUR </span><br />
@@ -68,9 +75,54 @@ export default {};
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
+
 #mailID {
   color: salmon;
   text-decoration: none;
   font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.leftPart{
+  background: #2f323a;
+  margin-top: none;
+  padding-top: 30px;
+  position: fixed;
+  left: 0;
+  width: 400px;
+  height: 100%;
+}
+
+.leftPart .profile_image{
+  
+  height: 150px;
+  width: 150px;
+  border-radius: 100px;
+  margin-bottom: 10px;
+}
+
+.leftPart h4{
+  color: #ccc;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.leftPart a{
+  color: #fff;
+  display: block;
+  width: 100%;
+  line-height: 60px;
+  text-decoration: none;
+  padding-left: 5px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  transition-property: background;
+}
+
+.leftPart a:hover{
+  background: #19B3D3;
+}
+
+.leftPart i{
+  padding-left: ;
 }
 </style>
