@@ -36,6 +36,9 @@ export default {};
 </script>
 
 <style scoped>
+.profile_image:hover {
+  transform: scale(1.2);
+}
 .leftPart{
 background: #0080ff;
     margin-top: none;
