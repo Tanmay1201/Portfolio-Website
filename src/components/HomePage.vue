@@ -1,11 +1,5 @@
 <template>
 <div>
-  <head>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"
-    />
-  </head>
   <body>
     <div class="leftPart">
       <center>
@@ -28,6 +22,10 @@
         <i class="fas fa-asterisk"></i>
         <span>Certifications</span>
       </a>
+      <a href="#">
+        <i class="fas fa-asterisk"></i>
+        <span>Contact</span>
+      </a>
     </div>
     <div class="rightPart">
       <div id="About">
@@ -44,11 +42,12 @@
         <a id="mailID" href="mailto:tanmaymathur4@gmail.com">TANMAYMATHUR4@GMAIL.COM</a>
         <br />
         <br />
+        <br/>
         <p id="IntroLines">
           Hi, I am a senior at Rajasthan Technical University studying Computer
           Science.
           <br />My Interests are broadly in developing quality business driven,
-          scalable softwares. Along with that, I am enthusiastic and passionate
+          scalable softwares. <br />Along with that, I am enthusiastic and passionate
           about exploring disruptive technologies.
           <br />
           <br />I am currently working as a Software Development Engineering Intern at
@@ -63,6 +62,7 @@
           </li>
           <li>Made few PR's in CC-Chooser</li>
         </ul>
+        <p>Have a cup of coffee: <font-awesome-icon icon="coffee" /></p>
       </div>
     </div>
   </body>
@@ -70,7 +70,8 @@
 </template>
 
 <script>
-export default {};
+export default {
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -98,12 +99,30 @@ export default {};
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
+li {
+  color: grey;
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  line-height: 1.8;
+}
 #mailID {
   color: salmon;
   text-decoration: none;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
+#IntroLines {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  line-height: 1.8;
+  color: grey;
+}
+
+h3 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px;
+  color: black;
+}
 .leftPart {
   background: #2f323a;
   margin-top: none;
@@ -151,7 +170,14 @@ sub {
   background: #19b3d3;
 }
 
+.rightPart i {
+      color: #fff;
+    text-shadow: 1px 1px 1px #ccc;
+    font-size: 1.5em;
+}
 .leftPart i {
-  padding-left: 0;
+      color: #fff;
+    text-shadow: 1px 1px 1px #ccc;
+    font-size: 1.5em;
 }
 </style>
