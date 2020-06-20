@@ -70,7 +70,8 @@
             </li>
             <li>Made few PR's in CC-Chooser</li>
           </ul>
-          <font-awesome-icon icon="fa-facebook-f" />
+          <!-- <font-awesome-icon icon="fa-facebook" /> -->
+          <font-awesome-icon :icon="['fab', 'linkedin']"/>
         </div>
       </div>
 

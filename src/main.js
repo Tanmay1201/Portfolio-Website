@@ -4,13 +4,22 @@ import Vue from "vue";
 import App from "./App";
 import router from "./router";
 
-//import { library } from "@fortawesome/fontawesome-svg-core";
-//import { faFacebookF } from "@fortawesome/fontawesome-free";
-//import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import { library } from "@fortawesome/fontawesome-svg-core";
 
-//library.add(faFacebookF);
 
-//Vue.component("font-awesome-icon", FontAwesomeIcon);
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
+
+// /svgs/brands/linkedin
+// import  { faFacebook }  from "@fortawesome/fontawesome-free";
+// import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import { FontAwesomeIcon, FontAwesomeLayers, FontAwesomeLayersText } from '@fortawesome/vue-fontawesome'
+
+library.add(faLinkedin);
+
+// Vue.component("font-awesome-icon", FontAwesomeIcon);
+Vue.component('font-awesome-icon', FontAwesomeIcon)
+Vue.component('font-awesome-layers', FontAwesomeLayers)
+Vue.component('font-awesome-layers-text', FontAwesomeLayersText)
 
 Vue.config.productionTip = false;
 
