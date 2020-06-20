@@ -1,36 +1,4 @@
 <template>
-  <div>
-    <body>
-      <div class="leftPart">
-        <center>
-          <img
-            src="../assets/profilepicture.jpg"
-            class="profile_image"
-            alt="Profile Image"
-          />
-          <h4>Tanmay</h4>
-        </center>
-        <a href="#About">
-          <i class="fas fa-asterisk"></i>
-          <span>About</span>
-        </a>
-        <a href="#Experience">
-          <i class="fas fa-asterisk"></i>
-          <span>Experience</span>
-        </a>
-        <a href="#Projects">
-          <i class="fas fa-asterisk"></i>
-          <span>Projects</span>
-        </a>
-        <a href="#">
-          <i class="fas fa-asterisk"></i>
-          <span>Certifications</span>
-        </a>
-        <a href="#">
-          <i class="fas fa-asterisk"></i>
-          <span>Contact</span>
-        </a>
-      </div>
       <div class="rightPart">
         <div id="About">
           <div class="name">
@@ -73,15 +41,17 @@
           <!-- <font-awesome-icon icon="fa-facebook" /> -->
           <font-awesome-icon :icon="['fab', 'linkedin']"/>
         </div>
-      </div>
 
       <div id="Experience">
+        <center>
         <span id="experience">EXPERIENCE</span>
+        </center>
         <br />
         <br />
         <br />
         <br />
         <br />
+        <center>
         <div id="metacubeco">
           <center>
             <img src="../assets/Metacube-Software-Logo.png" class="metacube" />
@@ -112,6 +82,7 @@
             <br />
           </center>
         </div>
+        </center>
         <br />
         <br />
         <br />
@@ -125,8 +96,8 @@
           <span>Hospital Finder</span>
         </div>
       </div>
-    </body>
-  </div>
+      </div>
+
 </template>
 
 <script>
@@ -204,9 +175,9 @@ li {
 }
 
 #Experience {
+  left:0;
   background: #404040;
   color: whitesmoke;
-  left: 30;
   width: 100%;
 }
 
@@ -219,9 +190,7 @@ li {
   padding-left: 20px;
   font-size: 60px;
   padding-top: 50px;
-  padding-left: 80px;
   margin-top: 10px;
-  margin-left: 130px;
 }
 #projects {
   padding-left: 20px;
@@ -239,7 +208,6 @@ h3 {
 #metacubeco {
   background: #202020;
   width: 500px;
-  margin-left: 500px;
   line-height: 1.3;
   font-family: Georgia, "Times New Roman", Times, serif;
   margin-bottom: 30px;
@@ -268,7 +236,6 @@ h3 {
   margin-top: 40px;
   background: #202020;
   width: 500px;
-  margin-left: 500px;
   line-height: 1.3;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
@@ -284,27 +251,15 @@ h3 {
   color: #3333ff;
 }
 
-.leftPart {
-  background: #0080ff;
-  margin-top: none;
-  padding-top: 30px;
-  position: fixed;
-  left: 0;
-  width: 300px;
-  height: 100%;
+.rightPart {
+    text-align: left;
+    width: 80%;
+    right: 0;
+    display: block;
+    position: relative;
+    z-index: 200;
 }
 
-.rightPart {
-  margin-left: 25%;
-  padding: 30px 5px;
-  text-align: left;
-}
-.leftPart .profile_image {
-  height: 150px;
-  width: 150px;
-  border-radius: 100px;
-  margin-bottom: 10px;
-}
 
 .profile_image:hover {
   transform: scale(1.2);
@@ -312,37 +267,12 @@ h3 {
 sub {
   font-size: 5px;
 }
-.leftPart h4 {
-  color: #ccc;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
 
-.leftPart a {
-  color: #fff;
-  display: block;
-  width: 100%;
-  line-height: 60px;
-  text-decoration: none;
-  padding-left: 5px;
-  box-sizing: border-box;
-  transition: 0.5s;
-  transition-property: background;
-  transition: transform 0.2s;
-}
-
-.leftPart a:hover {
-  background: #99ccff;
-}
 
 .rightPart i {
   color: #fff;
   text-shadow: 1px 1px 1px #ccc;
   font-size: 1.5em;
 }
-.leftPart i {
-  color: #fff;
-  text-shadow: 1px 1px 1px #ccc;
-  font-size: 1.5em;
-}
+
 </style>

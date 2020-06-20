@@ -1,15 +1,21 @@
 import Vue from "vue";
 import Router from "vue-router";
-import HomePage from "@/components/HomePage";
+// import HomePage from "@/components/HomePage";
+import BaseLayout from '@/components/BaseLayout'
 
 Vue.use(Router);
 
 export default new Router({
   routes: [
+    // {
+    //   path: "/",
+    //   name: "HomePage",
+    //   component: HomePage
+    // }
     {
       path: "/",
-      name: "HomePage",
-      component: HomePage
+      name: "BaseLayout",
+      component: BaseLayout
     }
   ]
 });
