@@ -4,6 +4,7 @@
     <Experience />
     <Projects />
     <Certifications />
+    <Contact />
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import About from "./pages/About";
 import Experience from "./pages/Experience";
 import Projects from "./pages/Projects";
 import Certifications from "./pages/Certifications";
+import Contact from "./pages/Contact";
 
 export default {
   name: "CoverPage",
@@ -19,7 +21,8 @@ export default {
     About,
     Experience,
     Projects,
-    Certifications
+    Certifications,
+    Contact
   }
 };
 </script>

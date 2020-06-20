@@ -24,7 +24,7 @@
       <i class="fas fa-asterisk"></i>
       <span>Certifications</span>
     </a>
-    <a href="#">
+    <a href="#contact">
       <i class="fas fa-asterisk"></i>
       <span>Contact</span>
     </a>
@@ -88,5 +88,9 @@ export default {};
   color: #fff;
   text-shadow: 1px 1px 1px #ccc;
   font-size: 1.5em;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 </style>
