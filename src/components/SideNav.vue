@@ -1,34 +1,34 @@
 <template>
   <div class="leftPart">
-        <center>
-          <img
-            src="../assets/profilepicture.jpg"
-            class="profile_image"
-            alt="Profile Image"
-          />
-          <h4>Tanmay</h4>
-        </center>
-        <a href="#About">
-          <i class="fas fa-asterisk"></i>
-          <span>About</span>
-        </a>
-        <a href="#Experience">
-          <i class="fas fa-asterisk"></i>
-          <span>Experience</span>
-        </a>
-        <a href="#Projects">
-          <i class="fas fa-asterisk"></i>
-          <span>Projects</span>
-        </a>
-        <a href="#">
-          <i class="fas fa-asterisk"></i>
-          <span>Certifications</span>
-        </a>
-        <a href="#">
-          <i class="fas fa-asterisk"></i>
-          <span>Contact</span>
-        </a>
-      </div>
+    <center>
+      <img
+        src="../assets/profilepicture.jpg"
+        class="profile_image"
+        alt="Profile Image"
+      />
+      <h4>Tanmay</h4>
+    </center>
+    <a href="#About">
+      <i class="fas fa-asterisk"></i>
+      <span>About</span>
+    </a>
+    <a href="#Experience">
+      <i class="fas fa-asterisk"></i>
+      <span>Experience</span>
+    </a>
+    <a href="#projects">
+      <i class="fas fa-asterisk"></i>
+      <span>Projects</span>
+    </a>
+    <a href="#certifications">
+      <i class="fas fa-asterisk"></i>
+      <span>Certifications</span>
+    </a>
+    <a href="#">
+      <i class="fas fa-asterisk"></i>
+      <span>Contact</span>
+    </a>
+  </div>
 </template>
 
 <script>
@@ -39,23 +39,24 @@ export default {};
 .profile_image:hover {
   transform: scale(1.2);
 }
-.leftPart{
-background: #0080ff;
-    margin-top: none;
-    /* padding-top: 30px; */
-    display: block;
-    position: sticky;
-    left: 0;
-    top: 0;
-    width: 20%;
-    height: 100vh;
-    z-index: 200;
+.leftPart {
+  background: #0080ff;
+  margin-top: none;
+  /* padding-top: 30px; */
+  display: block;
+  position: sticky;
+  left: 0;
+  top: 0;
+  width: 20%;
+  height: 100vh;
+  z-index: 200;
 }
 .leftPart ::after {
   display: table;
   clear: both;
 }
 .leftPart .profile_image {
+  padding-top: 40px;
   height: 150px;
   width: 150px;
   border-radius: 100px;

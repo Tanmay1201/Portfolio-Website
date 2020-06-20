@@ -1,39 +1,30 @@
 <template>
-      <div class="rightPart">
-        <About/>
-        <Experience/>
-      
-      <div id="Projects">
-        <span id="projects">PROJECTS</span>
-        <div id="Project1">
-          <span>Music Streaming App</span>
-        </div>
-        <div id="Project2">
-          <span>Hospital Finder</span>
-        </div>
-      </div>
-      </div>
-
+  <div class="rightPart">
+    <About />
+    <Experience />
+    <Projects />
+    <Certifications />
+  </div>
 </template>
 
 <script>
-import About from './pages/About'
-import Experience from './pages/Experience'
+import About from "./pages/About";
+import Experience from "./pages/Experience";
+import Projects from "./pages/Projects";
+import Certifications from "./pages/Certifications";
 
 export default {
-  name:"HoverPage",
-  components:{
+  name: "CoverPage",
+  components: {
     About,
-    Experience
+    Experience,
+    Projects,
+    Certifications
   }
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
-
-
 #Projects {
   background: #fff;
   left: 30;
@@ -48,12 +39,12 @@ export default {
   margin-top: 20px;
   margin-left: 130px;
 }
+
 h3 {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 30px;
   color: black;
 }
-
 
 #Project1 {
   width: 500px;
@@ -64,27 +55,18 @@ h3 {
   margin-bottom: 30px;
 }
 
-
 .rightPart {
-    text-align: left;
-    width: 80%;
-    right: 0;
-    display: block;
-    position: relative;
-    z-index: 200;
+  text-align: left;
+  width: 80%;
+  right: 0;
+  display: block;
+  position: relative;
+  z-index: 200;
 }
-
-
-/* 
-sub {
-  font-size: 5px;
-} */
-
 
 .rightPart i {
   color: #fff;
   text-shadow: 1px 1px 1px #ccc;
   font-size: 1.5em;
 }
-
 </style>
