@@ -4,7 +4,7 @@ import Vue from "vue";
 import App from "./App";
 import router from "./router";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin,faInstagram,faGithub,faFacebook,faSalesforce } from "@fortawesome/free-brands-svg-icons";
 import {
   FontAwesomeIcon,
   FontAwesomeLayers,
@@ -12,7 +12,10 @@ import {
 } from "@fortawesome/vue-fontawesome";
 
 library.add(faLinkedin);
-
+library.add(faSalesforce);
+library.add(faGithub);
+library.add(faInstagram);
+library.add(faFacebook);
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 Vue.component("font-awesome-layers", FontAwesomeLayers);
 Vue.component("font-awesome-layers-text", FontAwesomeLayersText);

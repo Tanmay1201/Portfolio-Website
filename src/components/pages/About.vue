@@ -38,7 +38,11 @@
       <li>Made few PR's in CC-Chooser</li>
     </ul>
     <!-- <font-awesome-icon icon="fa-facebook" /> -->
-    <font-awesome-icon :icon="['fab', 'linkedin']" />
+    <a href="https://www.linkedin.com/in/mathurtanmay4?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BBUtmusExTN2bAnzNx%2FUYTQ%3D%3D"> <font-awesome-icon :icon="['fab', 'linkedin']" /> </a>
+    <a href="https://trailblazer.me/id/tmathur9"><font-awesome-icon :icon="['fab', 'salesforce']" size="lg"/> </a>
+    <a href="https://github.com/Tanmay1201"><font-awesome-icon :icon="['fab', 'github']" size="lg"/> </a>
+    <a href="https://www.instagram.com/_j_e_r_y_y_/"><font-awesome-icon :icon="['fab', 'instagram']" /></a> 
+    <a href="https://www.facebook.com/tanmay.mathur.31508"><font-awesome-icon :icon="['fab', 'facebook']" /></a>
   </div>
 </template>
 
