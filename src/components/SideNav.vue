@@ -1,11 +1,7 @@
 <template>
   <div class="leftPart">
     <center>
-      <img
-        src="../assets/profilepicture.jpg"
-        class="profile_image"
-        alt="Profile Image"
-      />
+      <img src="../assets/pp.jpg" class="profile_image" alt="Profile Image" />
       <h4>Tanmay</h4>
     </center>
     <a href="#About">
@@ -39,17 +35,19 @@ export default {};
 .profile_image:hover {
   transform: scale(1.2);
 }
-.leftPart {
-  background: #0080ff;
-  margin-top: none;
-  /* padding-top: 30px; */
-  display: block;
-  position: sticky;
-  left: 0;
-  top: 0;
-  width: 20%;
-  height: 100vh;
-  z-index: 200;
+@media screen and (min-width: 860px) {
+  .leftPart {
+    background: #0080ff;
+    margin-top: none;
+    /* padding-top: 30px; */
+    display: block;
+    position: sticky;
+    left: 0;
+    top: 0;
+    width: 20%;
+    height: 100vh;
+    z-index: 200;
+  }
 }
 .leftPart ::after {
   display: table;

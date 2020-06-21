@@ -1,11 +1,12 @@
 <template>
-  <div id="contact">
+  <div class="contact">
+    <modal ref="contact-Modal" />
     <center>
       <span id="con">CONTACT</span>
     </center>
     <div id="contactblock">
-      <div id="cont">
-        <center>
+      <center>
+        <div id="cont">
           <span id="finaltext">
             Thank you for reaching out to me! <br />So let's share thoughts,talk
             about life.<br />
@@ -15,11 +16,13 @@
             Please feel free to write out to me, if you want to discuss about
             anything or everything :)
           </span>
-        </center>
-      </div>
+        </div>
+      </center>
     </div>
     <center>
-      <button class="button"><span> Click To Reach Tanmay </span></button>
+      <button class="button" type="button" @click="showModal()">
+        Click To Reach Tanmay
+      </button>
     </center>
     <br />
     <br />
@@ -35,11 +38,26 @@
 </template>
 
 <script>
-export default {};
+import axios from "axios";
+import modal from "@/components/modal.vue";
+export default {
+  name: "contacts",
+  components: {
+    modal
+  },
+  methods: {
+    showModal: function() {
+      this.$refs["contact-Modal"].showModal();
+    }
+  }
+  // mounted() {
+  //   this.$refs["contact-Modal"].closeByEvent();
+  // }
+};
 </script>
 
 <style>
-#contact {
+.contact {
   padding-top: 50px;
   width: 100%;
   background: #e0e0e0;

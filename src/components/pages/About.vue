@@ -37,12 +37,54 @@
       </li>
       <li>Made few PR's in CC-Chooser</li>
     </ul>
+    <br />
+    <br />
     <!-- <font-awesome-icon icon="fa-facebook" /> -->
-    <a href="https://www.linkedin.com/in/mathurtanmay4?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BBUtmusExTN2bAnzNx%2FUYTQ%3D%3D"> <font-awesome-icon :icon="['fab', 'linkedin']" /> </a>
-    <a href="https://trailblazer.me/id/tmathur9"><font-awesome-icon :icon="['fab', 'salesforce']" size="lg"/> </a>
-    <a href="https://github.com/Tanmay1201"><font-awesome-icon :icon="['fab', 'github']" size="lg"/> </a>
-    <a href="https://www.instagram.com/_j_e_r_y_y_/"><font-awesome-icon :icon="['fab', 'instagram']" /></a> 
-    <a href="https://www.facebook.com/tanmay.mathur.31508"><font-awesome-icon :icon="['fab', 'facebook']" /></a>
+    <div id="links">
+      <center>
+        <div id="single">
+          <a
+            href="https://www.linkedin.com/in/mathurtanmay4?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BBUtmusExTN2bAnzNx%2FUYTQ%3D%3D"
+          >
+            <font-awesome-icon
+              :icon="['fab', 'linkedin']"
+              size="4x"
+              :style="{ color: '#0080ff' }"
+            />
+          </a>
+          &nbsp;&nbsp;&nbsp;
+          <a href="https://trailblazer.me/id/tmathur9"
+            ><font-awesome-icon
+              :icon="['fab', 'salesforce']"
+              size="4x"
+              :style="{ color: '#0080ff' }"
+            />
+          </a>
+          &nbsp;&nbsp;&nbsp;
+          <a href="https://github.com/Tanmay1201"
+            ><font-awesome-icon
+              :icon="['fab', 'github']"
+              size="4x"
+              :style="{ color: 'black' }"
+            />
+          </a>
+          &nbsp;&nbsp;&nbsp;
+          <a href="https://www.instagram.com/_j_e_r_y_y_/"
+            ><font-awesome-icon
+              :icon="['fab', 'instagram']"
+              size="4x"
+              :style="{ color: '#ff66b2' }"
+          /></a>
+          &nbsp;&nbsp;&nbsp;
+          <a href="https://www.facebook.com/tanmay.mathur.31508"
+            ><font-awesome-icon
+              :icon="['fab', 'facebook']"
+              size="4x"
+              :style="{ color: '#3333ff' }"
+          /></a>
+        </div>
+      </center>
+    </div>
   </div>
 </template>
 
@@ -96,5 +138,8 @@ li {
   height: 100vh;
   padding-left: 20px;
   padding-top: 30px;
+}
+#links {
+  width: 100%;
 }
 </style>
