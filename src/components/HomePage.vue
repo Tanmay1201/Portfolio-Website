@@ -60,7 +60,7 @@ h3 {
 
 .rightPart {
   text-align: left;
-  width: 80%;
+  width: auto;
   right: 0;
   display: block;
   position: relative;

@@ -8,21 +8,19 @@
       <center>
         <div id="cont">
           <span id="finaltext">
-            Thank you for reaching out to me! <br />So let's share thoughts,talk
-            about life.<br />
-            May be let's connect over cup of coffee.
+            Thank you for reaching out to me!
+            <br />So let's share thoughts,talk
+            about life.
+            <br />May be let's connect over cup of coffee.
             <br />
-            <br />
-            Please feel free to write out to me, if you want to discuss about
+            <br />Please feel free to write out to me, if you want to discuss about
             anything or everything :)
           </span>
         </div>
       </center>
     </div>
     <center>
-      <button class="button" type="button" @click="showModal()">
-        Click To Reach Tanmay
-      </button>
+      <button class="button" type="button" @click="showModal()">Click To Reach Tanmay</button>
     </center>
     <br />
     <br />
@@ -61,6 +59,7 @@ export default {
   padding-top: 50px;
   width: 100%;
   background: #e0e0e0;
+  height: auto;
 }
 
 #con {
@@ -120,5 +119,16 @@ button {
 .button:hover span:after {
   opacity: 1;
   right: 0;
+}
+
+@media screen and (max-width: 850px) {
+  .contact {
+    height: auto;
+    width: 100%;
+  }
+  #cont {
+    height: auto;
+    width: auto;
+  }
 }
 </style>

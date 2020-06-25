@@ -9,12 +9,8 @@
     <br />
     <br />
     <br />
-    <sub id="shortBio"
-      >UNDERGRAD, COMPUTER SCIENCE, RAJASTHAN TECHNICAL UNIVERSITY,</sub
-    >
-    <a id="mailID" href="mailto:tanmaymathur4@gmail.com"
-      >TANMAYMATHUR4@GMAIL.COM</a
-    >
+    <sub id="shortBio">UNDERGRAD, COMPUTER SCIENCE, RAJASTHAN TECHNICAL UNIVERSITY,</sub>
+    <a id="mailID" href="mailto:tanmaymathur4@gmail.com">TANMAYMATHUR4@GMAIL.COM</a>
     <br />
     <br />
     <br />
@@ -22,7 +18,8 @@
       Hi, I am a senior at Rajasthan Technical University studying Computer
       Science.
       <br />My Interests are broadly in developing quality business driven,
-      scalable softwares. <br />Along with that, I am enthusiastic and
+      scalable softwares.
+      <br />Along with that, I am enthusiastic and
       passionate about exploring disruptive technologies.
       <br />
       <br />I am currently working as a Software Development Engineering Intern
@@ -41,49 +38,29 @@
     <br />
     <!-- <font-awesome-icon icon="fa-facebook" /> -->
     <div id="links">
-      <center>
-        <div id="single">
-          <a
-            href="https://www.linkedin.com/in/mathurtanmay4?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BBUtmusExTN2bAnzNx%2FUYTQ%3D%3D"
-          >
-            <font-awesome-icon
-              :icon="['fab', 'linkedin']"
-              size="4x"
-              :style="{ color: '#0080ff' }"
-            />
-          </a>
-          &nbsp;&nbsp;&nbsp;
-          <a href="https://trailblazer.me/id/tmathur9"
-            ><font-awesome-icon
-              :icon="['fab', 'salesforce']"
-              size="4x"
-              :style="{ color: '#0080ff' }"
-            />
-          </a>
-          &nbsp;&nbsp;&nbsp;
-          <a href="https://github.com/Tanmay1201"
-            ><font-awesome-icon
-              :icon="['fab', 'github']"
-              size="4x"
-              :style="{ color: 'black' }"
-            />
-          </a>
-          &nbsp;&nbsp;&nbsp;
-          <a href="https://www.instagram.com/_j_e_r_y_y_/"
-            ><font-awesome-icon
-              :icon="['fab', 'instagram']"
-              size="4x"
-              :style="{ color: '#ff66b2' }"
-          /></a>
-          &nbsp;&nbsp;&nbsp;
-          <a href="https://www.facebook.com/tanmay.mathur.31508"
-            ><font-awesome-icon
-              :icon="['fab', 'facebook']"
-              size="4x"
-              :style="{ color: '#3333ff' }"
-          /></a>
-        </div>
-      </center>
+      <div id="single">
+        <a
+          href="https://www.linkedin.com/in/mathurtanmay4?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BBUtmusExTN2bAnzNx%2FUYTQ%3D%3D"
+        >
+          <font-awesome-icon :icon="['fab', 'linkedin']" size="4x" :style="{ color: '#0080ff' }" />
+        </a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://trailblazer.me/id/tmathur9">
+          <font-awesome-icon :icon="['fab', 'salesforce']" size="4x" :style="{ color: '#0080ff' }" />
+        </a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://github.com/Tanmay1201">
+          <font-awesome-icon :icon="['fab', 'github']" size="4x" :style="{ color: 'black' }" />
+        </a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://www.instagram.com/_j_e_r_y_y_/">
+          <font-awesome-icon :icon="['fab', 'instagram']" size="4x" :style="{ color: '#ff66b2' }" />
+        </a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://www.facebook.com/tanmay.mathur.31508">
+          <font-awesome-icon :icon="['fab', 'facebook']" size="4x" :style="{ color: '#3333ff' }" />
+        </a>
+      </div>
     </div>
   </div>
 </template>
@@ -135,11 +112,16 @@ li {
   color: grey;
 }
 #About {
-  height: 100vh;
+  height: auto;
+  width: auto;
   padding-left: 20px;
   padding-top: 30px;
+  padding-bottom: 15px;
 }
-#links {
-  width: 100%;
+@media screen and (max-width: 850px) {
+  .About {
+    height: auto;
+    width: auto;
+  }
 }
 </style>

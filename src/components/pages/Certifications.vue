@@ -6,7 +6,7 @@
       </center>
       <div id="RHCA">
         <center>
-          <img src="../../assets/ansible.png" />
+          <img src="../../assets/ansible.png" class="acicon" />
           <img src="../../assets/ansiblecertificate.jpg" class="ac" />
         </center>
       </div>
@@ -30,9 +30,9 @@
         </center>
       </div>
     </div>
-    <br/>
-    <br/>
-    <br/>
+    <br />
+    <br />
+    <br />
   </div>
 </template>
 
@@ -43,18 +43,25 @@ export default {};
 <style>
 #certifications {
   padding-top: 50px;
-  width: 100%;
+  width: auto;
+  height: auto;
 }
 
 #certification {
-  font-size: 50px;
+  font-size: 40px;
   margin-top: 10px;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
+.acicon {
+  height: 150px;
+  width: 150px;
+  border-radius: 100px;
+}
 .ac {
   height: 300px;
-  width: 570px;
+  width: 100%;
+  max-width: 400px;
   padding-top: 30px;
 }
 
@@ -64,13 +71,14 @@ export default {};
 
 .sa {
   height: 300px;
-  width: 570px;
+  width: 100%;
+  max-width: 400px;
   padding-top: 30px;
 }
 
 .rhcsaicon {
-  height: 200px;
-  width: 250px;
+  height: 150px;
+  width: 150px;
   border-radius: 100px;
 }
 
@@ -79,13 +87,14 @@ export default {};
 }
 
 .icpcicon {
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
 }
 
 .acm {
   height: 300px;
-  width: 570px;
+  width: 100%;
+  max-width: 400px;
   padding-top: 30px;
   padding-left: 30px;
 }
@@ -99,15 +108,37 @@ export default {};
 }
 
 .dlicon {
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   border-radius: 100px;
 }
 
 .dl {
   height: 300px;
-  width: 570px;
+  width: 100%;
+  max-width: 400px;
   padding-top: 30px;
   padding-left: 30px;
+}
+
+@media screen and (max-width: 850px) {
+  .ac {
+    width: auto;
+    height: auto;
+  }
+
+  .sa {
+    width: auto;
+    height: auto;
+  }
+
+  .dl {
+    height: auto;
+  }
+
+  .acm {
+    width: auto;
+    height: auto;
+  }
 }
 </style>

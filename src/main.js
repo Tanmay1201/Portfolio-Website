@@ -17,6 +17,12 @@ import {
   FontAwesomeLayersText
 } from "@fortawesome/vue-fontawesome";
 
+import {
+  faMusic,
+  faHospital,
+  faShoppingCart,
+  faGamepad
+} from "@fortawesome/free-solid-svg-icons";
 import VModal from "vue-js-modal";
 
 library.add(faLinkedin);
@@ -24,6 +30,10 @@ library.add(faSalesforce);
 library.add(faGithub);
 library.add(faInstagram);
 library.add(faFacebook);
+library.add(faMusic);
+library.add(faHospital);
+library.add(faShoppingCart);
+library.add(faGamepad);
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 Vue.component("font-awesome-layers", FontAwesomeLayers);
 Vue.component("font-awesome-layers-text", FontAwesomeLayersText);

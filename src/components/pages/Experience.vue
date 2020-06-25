@@ -13,11 +13,15 @@
         <center>
           <img src="@/assets/Metacube-Software-Logo.png" class="metacube" />
           <br />
-          <span id="name"> Metacube </span><br /><br />
-          <span id="duration"> Jan'20 - Present </span>
+          <span id="name">Metacube</span>
+          <br />
+          <br />
+          <span id="duration">Jan'20 - Present</span>
           <p>
-            I am Currently an Intern at Metacube <br />Software Private Limited
-            in Jaipur. I worked <br />on Spring Framework to develop and extend
+            I am Currently an Intern at Metacube
+            <br />Software Private Limited
+            in Jaipur. I worked
+            <br />on Spring Framework to develop and extend
             <br />current and new functionalities.
           </p>
           <br />
@@ -28,12 +32,15 @@
         <center>
           <img src="@/assets/celebal-technologies.png" class="celebal" />
           <br />
-          <span id="name"> Celebal </span><br /><br />
-          <span id="duration"> Summer'19</span>
+          <span id="name">Celebal</span>
+          <br />
+          <br />
+          <span id="duration">Summer'19</span>
           <p>
-            I am Currently an Intern at Metacube <br />Software Private Limited
-            in Jaipur. I worked <br />on Spring Framework to develop and extend
-            <br />current and new functionalities.
+            I interned in the DevOps team. Developed and maintained
+            <br />automated CI/CD pipelines for code deployment.
+            <br />Built and deployed Docker containers for implementing
+            <br />Microservice Architecture from Monolithic
           </p>
           <br />
           <br />
@@ -56,11 +63,12 @@ export default {};
   background: #404040;
   padding-top: 50px;
   color: whitesmoke;
-  width: 100%;
+  width: auto;
+  height: auto;
 }
 
 #experience {
-  font-size: 60px;
+  font-size: 40px;
   margin-top: 10px;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
@@ -126,5 +134,16 @@ export default {};
 
 #celebaltechco #duration {
   color: #3333ff;
+}
+
+@media screen and (max-width: 850px) {
+  #celebaltechco {
+    height: auto;
+    width: auto;
+  }
+  #metacubeco {
+    height: auto;
+    width: auto;
+  }
 }
 </style>
