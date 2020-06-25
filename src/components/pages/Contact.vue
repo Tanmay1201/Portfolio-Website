@@ -1,5 +1,5 @@
 <template>
-  <div class="contact">
+  <div class="contact" id="con">
     <modal ref="contact-Modal" />
     <center>
       <span id="con">CONTACT</span>
@@ -7,31 +7,20 @@
     <div id="contactblock">
       <center>
         <div id="cont">
-          <span id="finaltext">
+          <p id="finaltext">
             Thank you for reaching out to me!
-            <br />So let's share thoughts,talk
+            So let's share thoughts,talk
             about life.
-            <br />May be let's connect over cup of coffee.
-            <br />
-            <br />Please feel free to write out to me, if you want to discuss about
+            May be let's connect over cup of coffee.
+            Please feel free to write out to me, if you want to discuss about
             anything or everything :)
-          </span>
+          </p>
         </div>
       </center>
     </div>
     <center>
       <button class="button" type="button" @click="showModal()">Click To Reach Tanmay</button>
     </center>
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
   </div>
 </template>
 
@@ -73,7 +62,9 @@ export default {
   border-color: #66ff66;
   width: 400px;
   height: 220px;
+  text-align: center;
   background: #ffffff;
+  line-height: 30px;
 }
 #contactblock {
   display: flex;
@@ -90,10 +81,13 @@ export default {
   font-size: 20px;
 }
 
-button {
+.button {
   color: #3333ff;
   border: 2px solid #4caf50;
   font-size: 24px;
+  padding: 20px;
+  height: auto;
+  margin-bottom: 20px;
   transition-duration: 0.4s;
 }
 .button span {
@@ -125,10 +119,19 @@ button {
   .contact {
     height: auto;
     width: 100%;
+    margin-bottom: 20px;
   }
   #cont {
     height: auto;
     width: auto;
+  }
+  button {
+    color: #3333ff;
+    border: 2px solid #4caf50;
+    font-size: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition-duration: 0.4s;
   }
 }
 </style>

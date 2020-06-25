@@ -42,23 +42,28 @@
         <a
           href="https://www.linkedin.com/in/mathurtanmay4?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BBUtmusExTN2bAnzNx%2FUYTQ%3D%3D"
         >
-          <font-awesome-icon :icon="['fab', 'linkedin']" size="4x" :style="{ color: '#0080ff' }" />
+          <font-awesome-icon
+            :icon="['fab', 'linkedin']"
+            size="2x"
+            :style="{ color: '#0080ff' }"
+            class="li"
+          />
         </a>
         &nbsp;&nbsp;&nbsp;
         <a href="https://trailblazer.me/id/tmathur9">
-          <font-awesome-icon :icon="['fab', 'salesforce']" size="4x" :style="{ color: '#0080ff' }" />
+          <font-awesome-icon :icon="['fab', 'salesforce']" size="2x" :style="{ color: '#0080ff' }" />
         </a>
         &nbsp;&nbsp;&nbsp;
         <a href="https://github.com/Tanmay1201">
-          <font-awesome-icon :icon="['fab', 'github']" size="4x" :style="{ color: 'black' }" />
+          <font-awesome-icon :icon="['fab', 'github']" size="2x" :style="{ color: 'black' }" />
         </a>
         &nbsp;&nbsp;&nbsp;
         <a href="https://www.instagram.com/_j_e_r_y_y_/">
-          <font-awesome-icon :icon="['fab', 'instagram']" size="4x" :style="{ color: '#ff66b2' }" />
+          <font-awesome-icon :icon="['fab', 'instagram']" size="2x" :style="{ color: '#ff66b2' }" />
         </a>
         &nbsp;&nbsp;&nbsp;
         <a href="https://www.facebook.com/tanmay.mathur.31508">
-          <font-awesome-icon :icon="['fab', 'facebook']" size="4x" :style="{ color: '#3333ff' }" />
+          <font-awesome-icon :icon="['fab', 'facebook']" size="2x" :style="{ color: '#3333ff' }" />
         </a>
       </div>
     </div>
@@ -122,6 +127,9 @@ li {
   .About {
     height: auto;
     width: auto;
+  }
+  .li {
+    size: "1x";
   }
 }
 </style>

@@ -8,7 +8,7 @@
       <a href="#Experience">Experience</a>
       <a href="#projects">Projects</a>
       <a href="#certifications">Certifications</a>
-      <a href="#contact">Contact</a>
+      <a href="#con">Contact</a>
     </center>
   </div>
 </template>

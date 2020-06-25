@@ -58,6 +58,7 @@ div.rightPart {
     position: relative;
   }
   .leftPart a {
+    position: relative;
     float: right;
     font-size: 14px;
   }
